@@ -9,7 +9,7 @@ public class ProductResponseDto
     public string Description { get; set; } = string.Empty;
     public decimal Price { get; set; }
     public string FileUrl { get; set; } = string.Empty;
-    public ProductCategory Category { get; set; }
+    public string Category { get; set; } = string.Empty;
     public int DownloadCount { get; set; }
     public string SellerName { get; set; } = string.Empty;
     public DateTime CreatedAt { get; set; }

@@ -112,7 +112,7 @@ public class ProductService : IProductService
             Description = product.Description,
             Price = product.Price,
             FileUrl = product.FileUrl,
-            Category = product.Category,
+            Category = product.Category.ToString(),
             DownloadCount = product.DownloadCount,
             SellerName = product.Seller?.DisplayName ?? string.Empty,
             CreatedAt = product.CreatedAt
