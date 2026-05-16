@@ -18,7 +18,6 @@ public class OrdersController : ControllerBase
         _orderService = orderService;
     }
 
-    // POST api/orders - създай поръчка
     [HttpPost]
     public async Task<IActionResult> Create([FromBody] CreateOrderDto dto)
     {
@@ -37,7 +36,6 @@ public class OrdersController : ControllerBase
         }
     }
 
-    // GET api/orders - поръчките на логнатия user
     [HttpGet]
     public async Task<IActionResult> GetMy()
     {
@@ -49,7 +47,6 @@ public class OrdersController : ControllerBase
         return Ok(orders);
     }
 
-    // GET api/orders/{id} - конкретна поръчка
     [HttpGet("{id}")]
     public async Task<IActionResult> GetById(Guid id)
     {
